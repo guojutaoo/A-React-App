@@ -29,18 +29,6 @@ class LoginForm extends Component {
     return errors;
   };
 
-  handleSubmit = e => {
-    e.preventDefault();
-    const errors = this.validationProperty();
-    this.setState({ errors: errors || {} });
-  };
-
-  handleChange = ({ currentTarget: input }) => {
-    const account = { ...this.state.account };
-    account[input.id] = input.value;
-    this.setState({ account });
-  };
-
   render() {
     return (
       <div>
@@ -58,7 +46,6 @@ class LoginForm extends Component {
             error={this.state.errors.password}
             handleChange={this.handleChange}
           />
-          <button className="btn btn-primary">Login</button>
         </form>
       </div>
     );
