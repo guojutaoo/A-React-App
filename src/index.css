@@ -19,3 +19,7 @@ code {
 label {
   cursor: pointer;
 }
+
+#maintitle{
+  background-image:linear-gradient(to right, blue, violet);
+}

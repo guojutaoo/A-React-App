@@ -9,7 +9,8 @@ const Input = props => {
         type="text"
         onChange={props.handleChange}
         className="form-control"
-        placeholder={props.show}
+        value={props.new}
+        placeholder={props.value}
       />
       {props.error && <div className="alert alert-danger">{props.error}</div>}
     </div>
