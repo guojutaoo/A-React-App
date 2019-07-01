@@ -9,7 +9,7 @@ import { getGenres } from "./fakeserver/genreServer";
 import { getBookList, getMovie, addMovie } from "./utils/fakeBookListServer";
 import { Link } from "react-router-dom";
 import "../App.css";
-import _ from "lodash";v
+import _ from "lodash";
 import httpService from "./services/httpService";
 
 class Counts extends Component {
